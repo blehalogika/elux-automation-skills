@@ -28,6 +28,13 @@ elux-ui-explorer/
                NEW Locator/Page Object/e2e_tests test against elux-automation-client,
                without SSH/shell access to the eLux device -- see that file for
                the full step-by-step workflow.
+elux-e2e-test-author/
+    SKILL.md    Page Object Model + pytest conventions for actually WRITING that
+               test in elux-automation-client once the elements are found:
+               coordinate-free role/name locators, teardown-first cleanup via
+               defer_restore(), ground-truth/behaviour-level assertions,
+               ticket-linked docstrings, and shared setup for reboot-heavy Scout
+               tests. Picks up where elux-ui-explorer leaves off.
 ```
 
 ## Using a skill
