@@ -35,6 +35,16 @@ elux-e2e-test-author/
                defer_restore(), ground-truth/behaviour-level assertions,
                ticket-linked docstrings, and shared setup for reboot-heavy Scout
                tests. Picks up where elux-ui-explorer leaves off.
+elux-e2e-builder/
+    SKILL.md    Outer-loop orchestrator combining the two skills above into one
+               repeatable process for ANY eLux e2e test request: explore, write,
+               RUN IT LIVE, diagnose the real failure and fix it at the right
+               layer (Page Object, fixture, or a new elux-automation-server
+               route via a small 4-file pattern), re-run until green, verify the
+               device is left clean, then ship a branch + PR per touched repo.
+               Not specific to any one feature area -- a Scout Board config-
+               change test is just one of the cases its "fix at the right layer"
+               table covers.
 ```
 
 ## Using a skill
