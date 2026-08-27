@@ -35,6 +35,15 @@ elux-e2e-test-author/
                defer_restore(), ground-truth/behaviour-level assertions,
                ticket-linked docstrings, and shared setup for reboot-heavy Scout
                tests. Picks up where elux-ui-explorer leaves off.
+elux-scout-e2e-builder/
+    SKILL.md    Capstone workflow combining the two skills above for a test that
+               changes a Scout Board config value and verifies its real effect on
+               a live device: the OU-scoped config-change fixtures, reboot
+               minimization, ground-truth verification below AT-SPI (X11) when
+               AT-SPI has no signal, extending elux-automation-server/the Scout
+               Board client when a primitive is missing, working around a broken/
+               undocumented Scout REST endpoint, and shipping a branch + PR per
+               touched repo at the end.
 ```
 
 ## Using a skill
